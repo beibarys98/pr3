@@ -39,7 +39,7 @@ $this->title = 'Developments';
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Development $model, $key, $index, $column) {
-                    return Url::toRoute([$action, 'id' => $model->id]);
+                    return Url::toRoute(['development/' . $action, 'id' => $model->id]);
                 }
             ],
         ],
